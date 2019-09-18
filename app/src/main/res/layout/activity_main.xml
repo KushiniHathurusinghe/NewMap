@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.mapbox.mapboxsdk.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        mapbox:access_token="@string/accessToken" />
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="398dp"
+        android:layout_height="62dp"
+        android:layout_alignBottom="@+id/mapview"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-85dp"
+        android:text="Show" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/mapview"
+        android:layout_alignRight="@+id/mapview"
+        android:layout_alignBottom="@+id/mapview"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="-154dp"
+        android:text="map" />
+
+</RelativeLayout>
